@@ -1,0 +1,19 @@
+// The following code will translate a site to any language - add this to footer.php in the script section: 
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+// specify that the only language translation needed is Spanish; the following code toggles between English/Spanish translation (instead of loading all languages): 
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+// Header area 
+
+<div id="google_translate_element"></div>
